@@ -25,6 +25,13 @@ console.log(now.getTime());
 
 // EJERCICIO 2
 
+let años = prompt('Ingrese el número de años de vida:')
+let añoActual = new Date()
+
+let añoNacimiento = añoActual.getFullYear() - años;
+let fecha1 = new Date(`01/01/${añoNacimiento}`);
+let diferencia = new Date().getTime() - fecha1.getTime();
+console.log(diferencia/1000);
 
 // EJERCICIO 3
 
